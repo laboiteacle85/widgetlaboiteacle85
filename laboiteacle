@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Widget La Boîte à Clé</title>
+</head>
+<body>
+  <h1>Chargement du widget…</h1>
+  <script>
+    !function(e,t){
+      var r = e.createElement(t),
+          a = e.getElementsByTagName(t)[0],
+          n = new Date,
+          s = "" + n.getFullYear() +
+              ("0" + (n.getMonth()+1)).slice(-2) +
+              ("0" + n.getDate()).slice(-2);
+      r.defer = 1;
+      r.src = "https://laboiteacle.4escape.io/public/js/iframe.min.js?v=" + s;
+      a.parentNode.insertBefore(r,a);
+    }(document,"script");
+  </script>
+</body>
+</html>
